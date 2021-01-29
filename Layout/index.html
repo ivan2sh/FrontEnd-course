@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
@@ -13,7 +15,9 @@
     <header>
       <nav>
         <span><a href="#">HotCoffe</a></span>
-        <span><form action=""><input name="search" type="text" placeholder="Search..."></form></span>        
+        <span>
+          <form action=""><input name="search" type="text" placeholder="Search..."></form>
+        </span>
         <span><a href="#">Home</a></span>
         <span><a href="#">Articles</a></span>
         <span><a href="#"><img src="#" alt="Instgram"></a></span>
@@ -33,59 +37,63 @@
     </section>
 
     <section class="posts">
-      <div class="container">
-        <article class="post">
+      <div class="posts-container">
+        <article class="post" id="first-post">
           <div class="content">
+            <div id="post1-image"></div>
             <h3 class="post-title">long established</h3>
-            <p class="post-content">It is a long established fact that a reader will be distracted by the readable
-              content of a
-              page when
-              looking at its layout. The point of using Lorem Ipsum is that....</p>
+            <p class="post-text">It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+            </p>
             <footer>
               <span class="post-date">May 20th 2020</span>
-              <span class="post-more"><a href="#">Read more</a></span>
+              <span class="post-link"><a href="#">Read more</a></span>
             </footer>
           </div>
         </article>
         <article class="post">
           <div class="content">
+            <div id="post2-image"></div>
+            <!-- <div class="clearfix"></div> -->
+            <div class="post-content">
+              <h3 class="post-title">long established</h3>
+              <p class="post-text">It is a long established fact that a reader will be distracted by the readable
+                content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+              </p>
+              <footer>
+                <span class="post-date">May 20th 2020</span>
+                <span class="post-link"><a href="#">Read more</a></span>
+              </footer>              
+            </div>
+          </div>
+        </article>
+        <article class="post">
+          <div class="content">
+            <div id="post3-image"></div>
             <h3 class="post-title">long established</h3>
-            <p class="post-content">It is a long established fact that a reader will be distracted by the readable
-              content of a
-              page when
-              looking at its layout. The point of using Lorem Ipsum is that....</p>
+            <p class="post-text">It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+            </p>
             <footer>
               <span class="post-date">May 20th 2020</span>
-              <span class="post-more"><a href="#">Read more</a></span>
+              <span class="post-link"><a href="#">Read more</a></span>
             </footer>
           </div>
         </article>
         <article class="post">
           <div class="content">
+            <div id="post4-image"></div>
             <h3 class="post-title">long established</h3>
-            <p class="post-content">It is a long established fact that a reader will be distracted by the readable
-              content of a
-              page when
-              looking at its layout. The point of using Lorem Ipsum is that....</p>
+            <p class="post-text">It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+            </p>
             <footer>
               <span class="post-date">May 20th 2020</span>
-              <span class="post-more"><a href="#">Read more</a></span>
+              <span class="post-link"><a href="#">Read more</a></span>
             </footer>
           </div>
         </article>
-        <article class="post">
-          <div class="content">
-            <h3 class="post-title">long established</h3>
-            <p class="post-content">It is a long established fact that a reader will be distracted by the readable
-              content of a
-              page when
-              looking at its layout. The point of using Lorem Ipsum is that....</p>
-            <footer>
-              <span class="post-date">May 20th 2020</span>
-              <span class="post-more"><a href="#">Read more</a></span>
-            </footer>
-          </div>
-        </article>
+        <div class="clearfix"></div>
       </div>
     </section>
 
@@ -94,15 +102,13 @@
         <article class="lg-post">
           <div class="content">
             <h3 class="lg-post-title">What is Lorem Ipsum?</h3>
-            <p class="lg-post-content">It is a long established fact that a reader will be distracted by the readable
-              content of a
-              page when
-              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution...
+            <p class="lg-post-text">It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution...
             </p>
             <footer>
               <span class="lg-post-date">May 20th 2020</span>
-              <span class="lg-post-more"><a href="#">Read more</a></span>
+              <span class="lg-post-link"><a href="#">Read more</a></span>
             </footer>
           </div>
         </article>

@@ -1,0 +1,127 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: content-box;
+}
+
+.t-size-sm,
+.post-date,
+.post-link {
+    font-size: 12px;
+}
+.t-size-base,
+.post-text,
+.lg-post-date,
+.lg-post-link {
+    font-size: 14px;
+}
+.t-size-lg,
+.lg-post-text {
+    font-size: 16px;
+}
+.t-weight-base,
+.intro-text,
+.post-text,
+.post-date,
+.lg-post-text,
+.lg-post-date {
+    font-weight: 400;
+}
+.t-weight-bold,
+.intro-title,
+.post-title,
+.post-link,
+.lg-post-title,
+.lg-post-link {
+    font-weight: 700;
+}
+.t-color-accent,
+.post-title,
+.post-link,
+.lg-post-title,
+.lg-post-link {
+    color: #2D3748;
+}
+.t-color-base,
+.post-text,
+.post-date,
+.lg-post-text,
+.lg-post-date {
+    color: #718096;
+}
+.intro-title {
+    font-size: 45px;
+    color: #000;
+}
+.intro-text {
+    font-size: 30px;
+    color: #4A5568;
+}
+.post-title {
+    font-size: 20px;
+}
+.lg-post-title {
+    font-size: 40px;
+}
+
+
+.main-container {
+    width: 1152px;
+    background-color: #eeeeee;
+    margin: 0 auto;
+}
+
+.posts {
+    width: 966px;
+    margin: 40px auto;
+}
+
+.posts-container {
+    margin: -40px -15px 0;
+}
+
+#first-post {
+    width: 960px;
+    height: 243px;
+}
+
+.post {
+    width: 300px;
+    height: 382px;
+    float: left;
+    border: 1px solid #E2E2E2;
+    margin: 40px 15px 0;
+    box-shadow: 0px 4px 4px rgba(192, 189, 189, 0.25);
+    border-radius: 5px;
+}
+
+#post1-image, #post2-image, #post3-image, #post4-image {
+    margin-top: -20px;
+    background-repeat: no-repeat;
+    float: right;
+}
+#post2-image, #post3-image, #post4-image {    
+    width: 300px;
+    height: 179px;
+}
+#post1-image {
+    width: 434px;
+    height: 243px;
+    background-image: url(images/image-1.png);
+}
+#post2-image {
+    background-image: url(images/image-2.png);
+}
+#post3-image {
+    background-image: url(images/image-3.png);
+}
+#post4-image {
+    background-image: url(images/image-4.png);
+}
+
+/* .post-content {
+    margin: 16px 24px 24px 16px;
+} */
+
+.clearfix {
+    clear: both;
+}

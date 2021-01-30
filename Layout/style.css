@@ -92,35 +92,79 @@
     margin: 40px 15px 0;
     box-shadow: 0px 4px 4px rgba(192, 189, 189, 0.25);
     border-radius: 5px;
+    position: relative;
 }
 
-#post1-image, #post2-image, #post3-image, #post4-image {
-    margin-top: -20px;
+.post1-image, .post2-image, .post3-image, .post4-image {
     background-repeat: no-repeat;
-    float: right;
 }
-#post2-image, #post3-image, #post4-image {    
+.post2-image, .post3-image, .post4-image {    
     width: 300px;
     height: 179px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 53%;
 }
-#post1-image {
+.post1-image {
     width: 434px;
     height: 243px;
     background-image: url(images/image-1.png);
+    position: absolute;
+    left: 55%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
 }
-#post2-image {
+.post2-image {
     background-image: url(images/image-2.png);
 }
-#post3-image {
+.post3-image {
     background-image: url(images/image-3.png);
 }
-#post4-image {
+.post4-image {
     background-image: url(images/image-4.png);
 }
 
-/* .post-content {
-    margin: 16px 24px 24px 16px;
-} */
+.post-title {
+    margin: 0;
+}
+
+.post1-content {
+    position: absolute;
+    left: 5%;
+    right: 53%;
+    top: 17%;
+    bottom: 18%;
+}
+
+.post2-content, .post3-content, .post4-content {
+    position: absolute;
+    left: 6%;
+    right: 8%;
+    top: 52%;
+    bottom: 6%;
+}
+
+.post-date {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+.post-link {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+.post-text {
+    margin: 15px 0;
+}
+
+.post1-content .post-text {
+    margin: 30px 0;
+}
 
 .clearfix {
     clear: both;

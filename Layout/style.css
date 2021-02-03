@@ -1,47 +1,49 @@
 * {
+    box-sizing: border-box;
+}
+body {
     font-family: 'Inter', sans-serif;
-    box-sizing: content-box;
 }
 
-.t-size-sm,
+.clearfix {
+    clear: both;
+}
+
 .post-date,
 .post-link {
     font-size: 12px;
 }
-.t-size-base,
 .post-text,
 .lg-post-date,
 .lg-post-link {
     font-size: 14px;
 }
-.t-size-lg,
-.lg-post-text {
+.lg-post-text,
+.nav-label {
     font-size: 16px;
 }
-.t-weight-base,
-.intro-text,
+.intro-subtitle,
 .post-text,
 .post-date,
 .lg-post-text,
-.lg-post-date {
+.lg-post-date,
+.nav-label {
     font-weight: 400;
 }
-.t-weight-bold,
 .intro-title,
 .post-title,
 .post-link,
 .lg-post-title,
-.lg-post-link {
+.lg-post-link,
+.header-link {
     font-weight: 700;
 }
-.t-color-accent,
 .post-title,
 .post-link,
 .lg-post-title,
 .lg-post-link {
     color: #2D3748;
 }
-.t-color-base,
 .post-text,
 .post-date,
 .lg-post-text,
@@ -52,10 +54,11 @@
     font-size: 45px;
     color: #000;
 }
-.intro-text {
+.intro-subtitle {
     font-size: 30px;
     color: #4A5568;
 }
+.header-link,
 .post-title {
     font-size: 20px;
 }
@@ -65,107 +68,111 @@
 
 
 .main-container {
+    position: relative;
     width: 1152px;
     background-color: #eeeeee;
     margin: 0 auto;
 }
 
+
+.header-container {
+    width: 100%;
+    height: 85px;
+    padding: 36px 96px 25px 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-label {
+    margin: 30px;
+}
+
+.resourses {
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro {
+    margin: 0 auto 39px;
+}
+
+.intro-container {
+    background-color: #FBFBFB;
+    width: 1152px;
+    height: 467px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro-title {
+    width: 354px;
+    margin-bottom: 19px;
+}
+
+.intro-title-img {
+    display: inline-block;
+    width: 70px;
+    height: 67px;
+    transform: rotate(-23deg);
+}
+
+
 .posts {
     width: 966px;
-    margin: 40px auto;
+    margin: 0 auto 43px;
 }
 
 .posts-container {
-    margin: -40px -15px 0;
+    margin-bottom: -40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 #first-post {
-    width: 960px;
-    height: 243px;
+    width: 966px;
 }
 
 .post {
     width: 300px;
-    height: 382px;
-    float: left;
     border: 1px solid #E2E2E2;
-    margin: 40px 15px 0;
     box-shadow: 0px 4px 4px rgba(192, 189, 189, 0.25);
     border-radius: 5px;
-    position: relative;
 }
 
-.post1-image, .post2-image, .post3-image, .post4-image {
-    background-repeat: no-repeat;
-}
-.post2-image, .post3-image, .post4-image {    
-    width: 300px;
-    height: 179px;
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 53%;
-}
-.post1-image {
-    width: 434px;
-    height: 243px;
-    background-image: url(images/image-1.png);
-    position: absolute;
-    left: 55%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-}
-.post2-image {
-    background-image: url(images/image-2.png);
-}
-.post3-image {
-    background-image: url(images/image-3.png);
-}
-.post4-image {
-    background-image: url(images/image-4.png);
+.content-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
-.post-title {
-    margin: 0;
+.content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.post1-content {
-    position: absolute;
-    left: 5%;
-    right: 53%;
-    top: 17%;
-    bottom: 18%;
+
+.footer-container {
+    width: 100%;
+    height: 79px;
+    padding: 30px 100px 31px 90px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.post2-content, .post3-content, .post4-content {
-    position: absolute;
-    left: 6%;
-    right: 8%;
-    top: 52%;
-    bottom: 6%;
-}
-
-.post-date {
-    position: absolute;
-    left: 0%;
-    bottom: 0%;
-}
-.post-link {
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
-}
-
-.post-text {
-    margin: 15px 0;
-}
-
-.post1-content .post-text {
-    margin: 30px 0;
-}
-
-.clearfix {
-    clear: both;
-}

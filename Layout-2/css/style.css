@@ -4,7 +4,9 @@ body {
     width: 1440px;
     margin: 0 auto;
 }
-
+a:hover {
+    text-decoration: underline;
+}
 
 .container {
     width: 1170px;
@@ -31,15 +33,10 @@ body {
     width: 770px;
 }
 
-
 .header {
-    position: absolute;
-    height: 102px;
     width: 1440px;
-    margin: 0 auto;
-    
-    display: flex;
-    align-items: center;
+    margin: 0 0 63px;
+    padding: 30px 0;
 }
 .header-nav__link {
     font-style: normal;
@@ -57,11 +54,8 @@ body {
 }
 
 .intro {
-    position: absolute;
-    top: 165px;
     width: 1440px;
-    height: 128px;
-    margin: 0 auto;
+    margin: 0 0 30px;
 }
 .main-title {
     font-style: normal;
@@ -77,29 +71,30 @@ body {
 }
 
 .line-1 {
-    position: absolute;
-    top: 323px;
-    left: 135px;
+    margin: 0 auto 30px;
 }
-
 
 .projects {
-    position: absolute;
-    top: 353px;
     width: 1440px;
-    height: 1538px;
+    margin: 0 0 120px;
 }
 .project-list {
-    height: 1538px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
 }
 .project {
     width: 100%;
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
     background-color: #fbfbfb;
+}
+.project__image {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
 }
 .project-description {
     padding: 30px 30px 30px 0;
@@ -145,7 +140,7 @@ body {
     background-repeat: no-repeat;
     background-position: right center;
 }
-.sdfsdf {
+.slider {
     display: flex;
     align-items: center;
 }
@@ -180,14 +175,9 @@ body {
     margin: auto;
 }
 
-
 .footer {
-    position: absolute;
-    top: 2011px;
     width: 1440px;
-    height: 420px;
     background-color: #2c2c2c;
-    border: 1px solid black;
 }
 .footer-content {
     padding: 56px 0;
@@ -237,7 +227,7 @@ body {
     opacity: 0.1;
 }
 .footer__site-copyright {
-    margin: 24px 0;
+    padding: 24px 0;
     text-align: center;
     color: rgba(200, 200, 200, 0.5);
     font-style: normal;

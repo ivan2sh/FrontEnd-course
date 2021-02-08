@@ -1,41 +1,49 @@
 body {
     font-family: 'TT Hoves', sans-serif;
     position: relative;
-    width: 1440px;
-    margin: 0 auto;
 }
 a:hover {
     text-decoration: underline;
 }
 
 .container {
-    width: 1170px;
     margin: 0 auto;
+    width: 1200px;
 }
 .row {
+    width: 1200px;
+    margin: 0 -15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .col-1 {
-    width: 70px;
+    width: 8.333%;
+    padding: 0 15px;
+}
+.col-3 {
+    width: 25%;
+    padding: 0 15px;
 }
 .col-4 {
-    width: 370px;
+    width: 33.333%;
+    padding: 0 15px;
 }
 .col-5 {
-    width: 470px;
+    width: 41.666%;
+    padding: 0 15px;
 }
 .col-7 {
-    width: 670px;
+    width: 58.333%;
+    padding: 0 15px;
 }
 .col-8 {
-    width: 770px;
+    width: 66.666%;
+    padding: 0 15px;
 }
 
 .header {
     width: 1440px;
-    margin: 0 0 63px;
+    margin: 0 auto 63px;
     padding: 30px 0;
 }
 .header-nav__link {
@@ -55,7 +63,7 @@ a:hover {
 
 .intro {
     width: 1440px;
-    margin: 0 0 30px;
+    margin: 0 auto 30px;
 }
 .main-title {
     font-style: normal;
@@ -76,19 +84,14 @@ a:hover {
 
 .projects {
     width: 1440px;
-    margin: 0 0 120px;
-}
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+    margin: 0 auto 120px;
 }
 .project {
-    width: 100%;
     margin-bottom: 60px;
+    background: #fbfbfb;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #fbfbfb;
 }
 .project__image {
     width: 100%;
@@ -104,7 +107,7 @@ a:hover {
     font-size: 40px;
     line-height: 50px;
     color: #BDBDBD;
-    margin-bottom: 20px;
+    margin: 30px 0 20px;
 }
 .project__description {
     font-style: normal;
@@ -114,13 +117,23 @@ a:hover {
     color: #000;
     margin-bottom: 64px;
 }
-.project__link-box {
+.project__link {
     width: 222px;
     height: 71px;
     background-color: #fff;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.project__link-text {
+    height: 24px;
+    padding: 6px 32px 6px 0;
+    color: #333333;
+    background-image: url(../assets/images/arrow-right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -128,18 +141,7 @@ a:hover {
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
-.project__link {
-    display: block;
-    height: 24px;
-    padding: 6px 32px 6px 0;
-    text-decoration: none;
-    color: #333333;
-    background-image: url(../img/arrow-right.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right center;
-}
-.slider {
+.projects-slider {
     display: flex;
     align-items: center;
 }
@@ -176,10 +178,14 @@ a:hover {
 
 .footer {
     width: 1440px;
+    margin: 0 auto;
     background-color: #2c2c2c;
 }
 .footer-content {
+    width: 1200px;
     padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .footer-column__title {
     margin-bottom: 24px;
@@ -206,13 +212,13 @@ a:hover {
     background-position: left 5px;
 }
 #adress {
-    background-image: url(../img/adress.png);
+    background-image: url(../assets/images/adress.png);
 }
 #phone {
-    background-image: url(../img/phone.png);
+    background-image: url(../assets/images/phone.png);
 }
 #email {
-    background-image: url(../img/email.png);
+    background-image: url(../assets/images/email.png);
 }
 .footer-column__item--isIcon {    
     display: inline;

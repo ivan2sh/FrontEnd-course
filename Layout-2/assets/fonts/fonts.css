@@ -93,3 +93,13 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Black'), local('TT-Hoves-Black'),
+        url('TTHoves-Black.woff2') format('woff2'),
+        url('TTHoves-Black.woff') format('woff'),
+        url('TTHoves-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }

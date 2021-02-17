@@ -11,35 +11,33 @@
   <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="css/style.css">
-  
+
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  
 </head>
 
 <body>
   <div class="page">
     <header class="header">
       <div class="container">
-        <div class="row">
-          <div class="col-1">
-            <a href="#" class="header__logo"><img src="assets/images/logo-dark.png" alt="Logo"></a>
-          </div>
-          <div class="col-3"></div>
+        <div class="row row--jcsb row--aic">
+          <a class="header__logo" href="page__main.html">
+            <img class="header-logo__img" src="assets/images/logo-dark.png" alt="Logo">
+          </a>
           <nav class="col-8 header-nav">
-            <a href="#" class="header-nav__link header-nav__link--isAccent">Главная</a>
-            <a href="page__gallery.html" class="header-nav__link">Галерея</a>
-            <a href="page__our-projects.html" class="header-nav__link">Проекты</a>
-            <a href="#" class="header-nav__link">Сертификаты</a>
-            <a href="page__contacts.html" class="header-nav__link">Контакты</a>
+            <a class="header-nav__link" href="page__main.html">Главная</a>
+            <a class="header-nav__link" href="page__gallery.html">Галерея</a>
+            <a class="header-nav__link" href="page__projects.html">Проекты</a>
+            <a class="header-nav__link" href="#">Сертификаты</a>
+            <a class="header-nav__link" href="page__contacts.html">Контакты</a>
           </nav>
         </div>
       </div>
     </header>
-  
-    <section class="intro">
+
+    <section class="intro" style="padding-top: 17rem;">
       <div class="container">
         <div class="row">
-          <div class="col-4 intro__main">
+          <div class="col-4">
             <h1 class="main-title">
               Наши <br>
               <span class="main-title__accent">проекты</span>
@@ -48,9 +46,9 @@
         </div>
       </div>
     </section>
-  
+
     <hr class="line-1" width="1170px" size="1px" color="#F2F2F2">
-  
+
     <section class="projects">
       <div class="container">
         <div class="row">
@@ -67,7 +65,9 @@
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book.
               </p>
-              <a href="#" class="project-btn"><div class="project-btn__label">Смотреть</div></a>
+              <a href="#" class="btn project__btn">
+                <div class="btn__label">Смотреть</div>
+              </a>
             </div>
           </div>
           <div class="project">
@@ -83,7 +83,9 @@
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book.
               </p>
-              <a href="#" class="project-btn"><div class="project-btn__label">Смотреть</div></a>
+              <a href="#" class="btn project__btn">
+                <div class="btn__label">Смотреть</div>
+              </a>
             </div>
           </div>
           <div class="project">
@@ -99,13 +101,15 @@
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book.
               </p>
-              <a href="#" class="project-btn"><div class="project-btn__label">Смотреть</div></a>
+              <a href="#" class="btn project__btn">
+                <div class="btn__label">Смотреть</div>
+              </a>
             </div>
           </div>
-          <div class="slider projects__footer">
+          <div class="projects__footer">
             <div class="slider-counter">
               <span class="slider-counter__item slider-counter__item--isCurrent">01</span>
-              <div class="slider-counter__devider"><img src="assets/images/devider.png" alt=""></div>
+              <div class="slider-counter__devider"></div>
               <span class="slider-counter__item">05</span>
             </div>
             <div class="slider-controls">
@@ -118,27 +122,30 @@
         </div>
       </div>
     </section>
-  
+
     <footer class="footer">
-      <div class="container container--isFooter">
+      <div class="container footer__container">
         <div class="footer-content">
           <div class="footer-column">
             <a href="#" class="footer__logo"><img src="assets/images/logo-light.png" alt="Logo"></a>
           </div>
           <div class="footer-column">
             <h4 class="footer-column__title">Информация</h4>
-            <a href="#" class="footer-column__item">Главная</a>
+            <a href="page__main.html" class="footer-column__item">Главная</a>
             <a href="page__gallery.html" class="footer-column__item">Галерея</a>
-            <a href="page__our-projects.html" class="footer-column__item">Проекты</a>
+            <a href="page__projects.html" class="footer-column__item">Проекты</a>
             <a href="#" class="footer-column__item">Сертификаты</a>
             <a href="page__contacts.html" class="footer-column__item">Контакты</a>
           </div>
           <div class="footer-column">
             <h4 class="footer-column__title">Контакты</h4>
-            <div class="footer-column__item footer-column__item--isContact" id="adress">100000, Республика
+            <div class="footer-column__item footer-column__item--isContact"
+              style="background-image: url(assets/images/adress.png);">100000, Республика
               Казахстан,<br>г. Караганда, ул. Телевизионная 10</div>
-            <div class="footer-column__item footer-column__item--isContact" id="phone">+7 (701) 77 76 811</div>
-            <div class="footer-column__item footer-column__item--isContact" id="email">Galym.sultanov@mail.ru</div>
+            <div class="footer-column__item footer-column__item--isContact"
+              style="background-image: url(assets/images/phone.png);">+7 (701) 77 76 811</div>
+            <div class="footer-column__item footer-column__item--isContact"
+              style="background-image: url(assets/images/email.png);">Galym.sultanov@mail.ru</div>
           </div>
           <div class="footer-column">
             <h4 class="footer-column__title">Социальные сети</h4>

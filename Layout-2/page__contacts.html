@@ -18,26 +18,25 @@
   <div class="page">
     <header class="header">
       <div class="container">
-        <div class="row">
-          <div class="col-1">
-            <a href="#" class="header__logo"><img src="assets/images/logo-dark.png" alt="Logo"></a>
-          </div>
-          <div class="col-3"></div>
+        <div class="row row--jcsb row--aic">
+          <a class="header__logo" href="page__main.html">
+            <img class="header-logo__img" src="assets/images/logo-dark.png" alt="Logo">
+          </a>
           <nav class="col-8 header-nav">
-            <a href="#" class="header-nav__link header-nav__link--isAccent">Главная</a>
-            <a href="page__gallery.html" class="header-nav__link">Галерея</a>
-            <a href="page__our-projects.html" class="header-nav__link">Проекты</a>
-            <a href="#" class="header-nav__link">Сертификаты</a>
-            <a href="page__contacts.html" class="header-nav__link">Контакты</a>
+            <a class="header-nav__link" href="page__main.html">Главная</a>
+            <a class="header-nav__link" href="page__gallery.html">Галерея</a>
+            <a class="header-nav__link" href="page__projects.html">Проекты</a>
+            <a class="header-nav__link" href="#">Сертификаты</a>
+            <a class="header-nav__link" href="page__contacts.html">Контакты</a>
           </nav>
         </div>
       </div>
     </header>
   
-    <section class="intro contacts">
+    <section class="intro contacts"  style="padding-top: 10.6rem;">
       <div class="container">
         <div class="row">
-          <div class="col-5 intro__main">
+          <div class="col-5">
             <h1 class="main-title main-title--forContacts">
               Контактная <br>
               <span class="main-title__accent">информация</span>
@@ -45,7 +44,9 @@
             <div class="contacts__text"><span class="contacts__text-accent">«Digital Project»</span><br>г. Караганда, ул. Телевизионная 10</div>
             <div class="contacts__text contacts__text-accent">+7 (701) 77 76 811</div>
             <div class="contacts__text">Galym.sultanov@mail.ru</div>
-            <a href="#" class="contacts-btn"><div class="contacts-btn__label">Обратная связь</div></a>
+            <a href="#" class="btn btn--dark contacts__btn">
+              <div class="btn__label btn__label--light">Обратная связь</div>
+            </a>
           </div>
           <div class="col-7">
             <img class="contacts__map" src="assets/images/map.png" alt="">
@@ -55,25 +56,25 @@
     </section>
   
     <footer class="footer">
-      <div class="container container--isFooter">
+      <div class="container footer__container">
         <div class="footer-content">
           <div class="footer-column">
             <a href="#" class="footer__logo"><img src="assets/images/logo-light.png" alt="Logo"></a>
           </div>
           <div class="footer-column">
             <h4 class="footer-column__title">Информация</h4>
-            <a href="#" class="footer-column__item">Главная</a>
+            <a href="page__main.html" class="footer-column__item">Главная</a>
             <a href="page__gallery.html" class="footer-column__item">Галерея</a>
-            <a href="page__our-projects.html" class="footer-column__item">Проекты</a>
+            <a href="page__projects.html" class="footer-column__item">Проекты</a>
             <a href="#" class="footer-column__item">Сертификаты</a>
             <a href="page__contacts.html" class="footer-column__item">Контакты</a>
           </div>
           <div class="footer-column">
             <h4 class="footer-column__title">Контакты</h4>
-            <div class="footer-column__item footer-column__item--isContact" id="adress">100000, Республика
+            <div class="footer-column__item footer-column__item--isContact" style="background-image: url(assets/images/adress.png);">100000, Республика
               Казахстан,<br>г. Караганда, ул. Телевизионная 10</div>
-            <div class="footer-column__item footer-column__item--isContact" id="phone">+7 (701) 77 76 811</div>
-            <div class="footer-column__item footer-column__item--isContact" id="email">Galym.sultanov@mail.ru</div>
+            <div class="footer-column__item footer-column__item--isContact" style="background-image: url(assets/images/phone.png);">+7 (701) 77 76 811</div>
+            <div class="footer-column__item footer-column__item--isContact" style="background-image: url(assets/images/email.png);">Galym.sultanov@mail.ru</div>
           </div>
           <div class="footer-column">
             <h4 class="footer-column__title">Социальные сети</h4>
